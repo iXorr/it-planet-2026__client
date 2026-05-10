@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap');
+
+:root {
+  --primary: #0f766e;
+  --primary-dark: #115e59;
+  --accent: #f97316;
+  --bg: #f7faf9;
+  --bg-card: #ffffff;
+  --text: #0f172a;
+  --text-muted: #475569;
+  --border: #d9e4e8;
+  font-family: 'Manrope', 'Segoe UI', sans-serif;
+  font-size: 17px;
+  color: var(--text);
+  background: var(--bg);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(circle at 0% 0%, rgba(15, 118, 110, 0.08) 0, rgba(15, 118, 110, 0) 40%),
+    radial-gradient(circle at 100% 100%, rgba(249, 115, 22, 0.09) 0, rgba(249, 115, 22, 0) 35%);
+}
+
+a {
+  color: inherit;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+a,
+button,
+input,
+select,
+textarea,
+.soft-card,
+.p-button,
+.p-inputtext,
+.p-select,
+.p-selectbutton {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 220ms ease,
+    transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+button:hover,
+.p-button:hover {
+  transform: translateY(-1px);
+}
+
+#app {
+  min-height: 100vh;
+}
+
+h1, h2, h3, .brand-font {
+  font-family: 'Space Grotesk', 'Manrope', sans-serif;
+}
+
+.soft-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(217, 228, 232, 0.8);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  border-radius: 16px;
+}
+
+.page-shell {
+  width: min(1280px, 100% - 2rem);
+  margin-inline: auto;
+}
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #cbd5e1; }
+
+@media (max-width: 768px) {
+  .page-shell {
+    width: calc(100% - 1rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  .soft-card,
+  .p-button,
+  .p-inputtext,
+  .p-select,
+  .p-selectbutton {
+    transition: none;
+  }
+
+  button:hover,
+  .p-button:hover {
+    transform: none;
+  }
+}
