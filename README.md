@@ -1,4 +1,4 @@
-# Trampoline application client
+# Trampoline application client-side
 
 ![Vue.js](https://img.shields.io/badge/Vue.js-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
 ![Vuetify](https://img.shields.io/badge/Vuetify-%231867C0.svg?style=for-the-badge&logo=vuetify&logoColor=white)
